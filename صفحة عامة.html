@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>المحقق | The Investigator</title>
+    <!-- استدعاء خطوط Google Fonts (Cairo & Cinzel) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&family=Cinzel:wght@600;800&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --bg-color: #0b0c10;
+            --card-bg: #1f2833;
+            --accent-red: #e63946;
+            --accent-gold: #c5a880;
+            --text-main: #edf2f4;
+            --text-muted: #8d99ae;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            font-family: 'Cairo', sans-serif;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 30px 15px;
+            background-image: radial-gradient(circle at top, #1a1a24 0%, #0b0c10 80%);
+        }
+
+        .container {
+            max-width: 650px;
+            width: 100%;
+            background: rgba(31, 40, 51, 0.75);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 20px;
+            padding: 40px 30px;
+            text-align: center;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+        }
+
+        /* العناوين الرئيسية */
+        .main-title {
+            font-size: 2.8rem;
+            font-weight: 900;
+            color: var(--accent-red);
+            text-shadow: 0 4px 15px rgba(230, 57, 70, 0.35);
+            margin-bottom: 5px;
+            letter-spacing: 1px;
+        }
+
+        .subtitle-en {
+            font-family: 'Cinzel', serif;
+            font-size: 1.25rem;
+            color: var(--accent-gold);
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            margin-bottom: 35px;
+        }
+
+        /* قسم الروابط التشعبية */
+        .links-group {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin-bottom: 40px;
+        }
+
+        .custom-link {
+            display: block;
+            background: rgba(255, 255, 255, 0.04);
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            color: var(--text-main);
+            text-decoration: none;
+            padding: 14px 20px;
+            border-radius: 12px;
+            font-size: 1.05rem;
+            font-weight: 700;
+            transition: all 0.3s ease;
+        }
+
+        .custom-link:hover {
+            background: var(--accent-red);
+            color: #fff;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(230, 57, 70, 0.35);
+            border-color: var(--accent-red);
+        }
+
+        .custom-link.empty-link {
+            border-style: dashed;
+            color: var(--text-muted);
+            opacity: 0.7;
+        }
+
+        .custom-link.empty-link:hover {
+            opacity: 1;
+            border-color: var(--accent-gold);
+            background: rgba(197, 168, 128, 0.1);
+            color: var(--accent-gold);
+            box-shadow: none;
+        }
+
+        /* فاصل جمالي */
+        .divider {
+            height: 1px;
+            background: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.15), transparent);
+            margin: 35px 0;
+        }
+
+        /* شروحات المحتوى */
+        .content-heading-ar {
+            font-size: 1.45rem;
+            font-weight: 700;
+            color: var(--text-main);
+            margin-bottom: 6px;
+        }
+
+        .content-heading-en {
+            font-family: 'Cinzel', serif;
+            font-size: 0.95rem;
+            color: var(--text-muted);
+            letter-spacing: 1.5px;
+            margin-bottom: 25px;
+        }
+
+        /* الوصف والدعوة للاشتراك */
+        .description-box {
+            background: rgba(0, 0, 0, 0.25);
+            border-radius: 12px;
+            padding: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            text-align: right;
+            line-height: 1.8;
+            font-size: 1rem;
+            color: #d1d5db;
+        }
+
+        .description-box strong {
+            color: var(--accent-gold);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- العنوان الرئيسي -->
+        <h1 class="main-title">المحقق</h1>
+        <div class="subtitle-en">The Investigator</div>
+
+        <!-- الروابط التشعبية -->
+        <div class="links-group">
+            <!-- الرابط الأول: يوتيوب -->
+            <a href="https://www.youtube.com/@The.Investigator1" target="_blank" rel="noopener noreferrer" class="custom-link">
+                قناة اليوتيوب الرسمية | YouTube
+            </a>
+
+            <!-- الرابط الثاني: فيسبوك -->
+            <a href="https://www.facebook.com/share/1CbsQnXzN1/" target="_blank" rel="noopener noreferrer" class="custom-link">
+                صفحة فيسبوك الرسمية | Facebook
+            </a>
+
+            <!-- الرابط الثالث: إنستغرام -->
+            <a href="https://www.instagram.com/the.investigator1?rpxt=MWQycGNmY3lrYWo3cA==" target="_blank" rel="noopener noreferrer" class="custom-link">
+              قناة إنستغرام الرسمية | Instagram
+            </a>
+        </div>
+
+        <div class="divider"></div>
+
+        <!-- الشرح ونوع المحتوى -->
+        <h2 class="content-heading-ar">قصص جرائم وكوارث وقصص غريبة حول العالم</h2>
+        <div class="content-heading-en">Crimes, Disasters, And Strange Stories around the world</div>
+
+        <!-- صندوق الوصف ودعوة المتابعين للاشتراك (متاح للتعديل) -->
+        <div class="description-box">
+            <p>
+                مرحباً بكم في عالم <strong>«المحقق»</strong>؛ بوابتكم للغوص في أعماق أكثر القضايا غموضاً، والملفات الجنائية المعقدة، وأغرب الحوادث والكوارث الطبيعية والبشرية التي هزت التاريخ ولم تجد لها تفسيراً سهلاً. 
+            </p>
+            <br>
+            <p>
+                نبحث خلف الكواليس، نحلل الأدلة، ونكشف التفاصيل المنسية. <strong>انضموا إلى رحلتنا الاستكشافية واشتركوا الآن عبر الروابط في الأعلى</strong> لتكونوا أول من يشاهد الوثائقيات والقصص الحصرية فور صدورها، وشاركوا في مجتمعنا وتحليلات القضايا القادمة.
+            </p>
+        </div>
+    </div>
+
+</body>
+</html>
